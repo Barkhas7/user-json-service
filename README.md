@@ -42,6 +42,33 @@ SOA Lab 06-ийн JSON REST Profile Service.
 ## Authentication
 Энэхүү service нь protected endpoint-ууд дээр token шалгадаг.
 
-Authentication header:
+### Authentication header:
 ```text
 Authorization: Bearer <token>
+JSON service нь SOAP service рүү дараах method-үүдээр ханддаг:
+
+validateToken
+
+getUserIdByToken
+
+### Database
+
+SQLite database ашигладаг.
+
+### Үндсэн хүснэгт:
+
+profiles
+
+### Ажиллуулах заавар
+
+Project-оо Eclipse эсвэл өөр IDE дээр нээнэ.
+
+Maven dependencies татагдсан эсэхийг шалгана.
+
+JsonServerLauncher.java файлыг ажиллуулна.
+
+http://localhost:8082/users/... endpoint-уудаар тест хийнэ.
+
+### Тайлбар
+
+Энэхүү service нь frontend-ээс ирсэн profile CRUD хүсэлтүүдийг боловсруулж, authentication-ийг SOAP service-ээр шалгадаг.
