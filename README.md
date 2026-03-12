@@ -43,7 +43,7 @@ SOA Lab 06-ийн JSON REST Profile Service.
 Энэхүү service нь protected endpoint-ууд дээр token шалгадаг.
 
 ### Authentication header:
-```text
+text
 Authorization: Bearer <token>
 JSON service нь SOAP service рүү дараах method-үүдээр ханддаг:
 
